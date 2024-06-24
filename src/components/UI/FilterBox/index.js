@@ -21,9 +21,6 @@ function FilterBox(props) {
         </li>
         <li onClick={props.onSort.bind(null, "sortByNewDate")}>Letest</li>
         <li onClick={props.onSort.bind(null, "sortByOldDate")}>Oldest</li>
-        <li onClick={props.onSort.bind(null, "sortByPopularity")}>
-          Popularity
-        </li>
       </div>
     </div>
   );
