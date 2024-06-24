@@ -1,0 +1,24 @@
+.grid {
+    margin-top: 20rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+    gap: 5rem;
+    grid-auto-rows: 70rem;
+}
+
+.grid-small {
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    gap: 5rem;
+    grid-auto-rows: 57rem;
+}
+
+/* 
+.grid> :nth-child(1),
+.grid> :nth-child(2) {
+    grid-row: span 1;
+}
+
+.grid> :nth-child(n+3) {
+    grid-row: span 1;
+} */

@@ -1,0 +1,10 @@
+.main-container {
+    position: relative;
+    /* padding: 3rem; */
+
+}
+
+.container-content {
+    width: 100%;
+    padding: 3rem;
+}

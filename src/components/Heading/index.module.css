@@ -1,0 +1,20 @@
+.heading {
+    margin: auto;
+    font-size: 5.8rem;
+    text-align: center;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #f6f7f8, var(--tertiary-font-color), #f6f7f8);
+    width: 60%;
+    min-width: min-content;
+    clip-path: polygon(8rem 0, 100% 0, calc(100% - 8rem) 100%, 0 100%);
+    padding: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--default-font-color);
+}
+
+@media (max-width: 800px) {
+    .heading {
+        width: 100%;
+    }
+}

@@ -1,0 +1,18 @@
+.contact-container {
+  width: 100%;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.book-img {
+  width: 10rem;
+}
+
+.heading-tertiary {
+  font-size: var(--large-font-size);
+  color: var(--primary-font-color);
+  text-align: center;
+}

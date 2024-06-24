@@ -1,0 +1,145 @@
+.product-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  margin-top: 8rem;
+}
+
+.container-display {
+  display: flex;
+  height: 100%;
+  width: 50%;
+}
+
+.display-slider {
+  width: 20rem;
+  border-right: 3px solid #0001;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+@media (max-width: 800px) {
+  .container-display {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  .display-slider {
+    flex-direction: row;
+    width: 100%;
+    border: 0;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #0001;
+  }
+  .product-container {
+    flex-direction: column;
+    height: 100%;
+    gap: 3rem;
+  }
+}
+
+.slider-image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slider-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.display-image {
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.display-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details-container {
+  max-width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0 4rem;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .details-container {
+    max-width: 100%;
+  }
+  .display-slider {
+    flex-direction: row;
+  }
+}
+
+.row-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.rating-container > span {
+  margin-left: 2rem;
+  font-size: var(--medium-font-size);
+  color: var(--primary-font-color);
+}
+
+.item-name {
+  font-size: var(--x-large-font-size);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.item-price {
+  font-size: var(--large-font-size);
+  color: var(--primary-font-color);
+}
+
+.secondary-text {
+  text-transform: capitalize;
+  text-align: end;
+  font-weight: 400;
+  color: var(--primary-font-color);
+}
+
+.description-container {
+  border-top: 1px solid #0001;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  color: var(--primary-font-color);
+  max-height: 47rem;
+  overflow-y: scroll;
+}
+
+.item-description {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+  hyphens: auto;
+}
+
+.description-label {
+  display: block;
+  font-size: var(--medium-font-size);
+  font-weight: 500;
+}

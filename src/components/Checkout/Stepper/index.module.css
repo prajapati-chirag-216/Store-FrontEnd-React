@@ -1,0 +1,74 @@
+.stepper-container {
+    display: flex;
+    gap: 15rem;
+    position: relative;
+}
+
+.stepper-container--large {
+    gap: 40rem;
+}
+
+.stepper-line {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 98%;
+    /*width to 98% just that line's ends could not visible */
+    height: 2px;
+    border: none;
+    background-color: #ccc;
+}
+
+.container-content {
+    width: 4rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 10;
+}
+
+.container-content--large {
+    width: 5rem;
+    height: 14rem;
+}
+
+.container-bubble {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--default-font-size)
+}
+
+.container-bubble--large {
+    width: 6rem;
+    height: 6rem;
+}
+
+.container-label {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.8rem;
+    line-height: .5rem;
+    color: var(--secondary-font-color);
+}
+
+.label-active {
+    color: var(--color-black);
+}
+
+.bubble-active {
+    box-shadow: 0 2px 1rem #0005;
+    color: var(--color-white);
+}
+
+.bubble-complete {
+    background-color: var(--color-black);
+}

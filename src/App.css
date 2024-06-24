@@ -1,0 +1,89 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  /*/////////////////////////
+  ///// FONT COLORS */
+  --default-font-color: #;
+  --primary-font-color: #666666;
+  --secondary-font-color: gray;
+  --tertiary-font-color: #bebebe;
+
+  /*/////////////////////////
+  ///// FONT SIZES */
+  --default-font-size: 1.6rem;
+  --small-font-size: 1rem;
+  --medium-font-size: 2rem;
+  --large-font-size: 3rem;
+  --x-large-font-size: 5rem;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  color: var(--color-black);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: .5px;
+}
+
+
+
+* {
+  box-sizing: inherit;
+  color: currentColor;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #d3d3d3b8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d1d1d1;
+}
+
+input::placeholder {
+  color: #b9babc;
+}
+
+input:hover {
+  outline: none;
+}
+
+.not-found-text {
+  margin-top: -5rem;
+  font-size: var(--large-font-size);
+  color: var(--tertiary-font-color);
+  /* text-align: center; */
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 58%;
+  }
+
+  .not-found-text {
+    margin-top: 5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}

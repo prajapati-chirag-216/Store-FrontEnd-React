@@ -1,0 +1,64 @@
+/* index.module.css */
+
+.footer {
+    margin-top: 15rem;
+    border-top: 1px solid #0002;
+    padding: 6rem 3rem;
+    display: flex;
+    height: 55rem;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: space-between;
+}
+
+.newspaper {
+    flex: 1 1 50rem;
+    max-width: 70rem;
+}
+
+.corporate {
+    flex: 1 1 30rem;
+    max-width: 20rem;
+}
+
+.contactInfo {
+    flex: 1 1 30rem;
+    max-width: 60rem;
+}
+
+.socialLinks {
+    flex: 1 1 20rem;
+}
+
+.footer h3 {
+    color: var(--primary-font-color);
+    font-size: 2.7rem;
+    margin-bottom: 3rem;
+}
+
+.footer p {
+    color: var(--secondary-font-color);
+    font-size: 1.9rem;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 1.4rem;
+    color: var(--secondary-font-color);
+    font-size: 1.9rem;
+}
+
+.footer ul li a {
+    color: var(--secondary-font-color);
+    font-size: 1.9rem;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}

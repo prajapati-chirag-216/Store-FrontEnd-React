@@ -1,0 +1,146 @@
+.nav-container {
+  width: 100%;
+  height: 11rem;
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #5f676a;
+}
+
+.container-links {
+  display: flex;
+  gap: 2rem;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  color: #fff;
+  z-index: 10;
+}
+
+.active-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14rem;
+  height: 100%;
+  background-color: #fff3;
+  border-radius: 5px;
+  transition: all 0.2s;
+  z-index: -1;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: var(--large-font-size);
+  text-decoration: none;
+  height: fit-content;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 14rem;
+  text-align: center;
+  transition: all 0.1s;
+}
+
+.nav-link:active {
+  background-color: rgba(188, 188, 188, 0.2);
+}
+
+.container-btns {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  margin-top: -1rem;
+}
+
+.btn-icon {
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  transition: all 0.1s;
+  position: relative;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.1s;
+  transform-origin: center;
+}
+
+.btn-icon:hover {
+  background-color: #fff3;
+}
+
+.btn-icon:active {
+  background-color: rgba(240, 240, 240, 0.425);
+}
+
+.btn-icon:active > svg {
+  transition: all 0.1s ease;
+  scale: 0.9;
+}
+
+.icon-float {
+  position: fixed;
+  bottom: 4rem;
+  right: 5rem;
+  background-color: #0003;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 0 5px #0002;
+}
+
+.icon-float > .total-qty {
+  margin-top: 1rem;
+}
+
+.icon-float:hover {
+  background-color: #0005;
+}
+
+.total-qty {
+  position: absolute;
+  top: -0.5rem;
+  font-size: 2.2rem;
+  color: var(--color-white);
+  font-weight: 500;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.user-name {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: 1.8rem;
+  color: var(--color-white);
+  font-weight: 500;
+  width: max-content;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+}
+
+.bump {
+  animation: bump 200ms cubic-bezier(0.62, -0.7, 0.38, 1.66) alternate-reverse;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.2);
+  }
+
+  70% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
