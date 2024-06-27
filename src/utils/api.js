@@ -65,15 +65,6 @@ export async function resetPassword(userData) {
   return response;
 }
 
-export const getAllProducts = async () => {
-  const config = {
-    url: `/getAllproducts`,
-    withCredentials: true,
-  };
-  const response = await AxiosInstance(config);
-  return response;
-};
-
 export const getProduct = async (id) => {
   const config = {
     url: `/getproduct/${id}`,
@@ -146,19 +137,14 @@ export const getAccessToken = async () => {
   }
 };
 
-export const fetchProductByName = (name, data) => {
-  const filterdName = name.split(" ").join("").toLowerCase();
-  const filteredData = data.filter((item) => {
-    const itemName = item.name.split(" ").join("").toLowerCase();
-    return itemName.includes(filterdName);
-  });
-
-  return filteredData;
-};
-
-export const sortItems = async (id, name) => {
+export const fetchFilteredItems = async (
+  windowSize,
+  skip,
+  sortBy,
+  searchTxt = "all"
+) => {
   const config = {
-    url: `/getfilteredproducts/${id}/${name}`,
+    url: `/getfilteredproducts/${windowSize}/${skip}/${sortBy}/${searchTxt}`,
   };
   const response = await AxiosInstance(config);
   return response;

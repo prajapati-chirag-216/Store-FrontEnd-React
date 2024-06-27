@@ -138,3 +138,5 @@ export const VALIDATION_MESSAGES = {
   DESCRIPTION: "Description: 40-400 characters.",
   IMAGE: "Image is required (jpeg,png,jpg)",
 };
+
+export const WINDOW_SIZE = 10;

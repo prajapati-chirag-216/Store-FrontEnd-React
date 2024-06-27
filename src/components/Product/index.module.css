@@ -1,0 +1,9 @@
+.btn-container {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+.btn-container > button {
+  padding: 2rem 0;
+}
